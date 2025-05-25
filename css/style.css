@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url('fonts/ptsans-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+
+}
+.visually-hidden {
+  display: none;
+}
+.page-header {
+
+}
+.navigation {
+
+}
+.navigation-logo {
+
+}
+.navigation-list {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.navigation-item {
+
+}
+.navigation-link {
+
+}
+.navigation-other {
+
+}
+.navigation-booking {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.inner-header {
+
+}
+.inner-header-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: black;
+
+
+}
+.breadcrumbs {
+
+}
+.breadcrumbs-link {
+
+}
+.breadcrumbs-item {
+
+}
+.main-index {
+
+}
+.logo-welcome {
+
+}
+.description {
+
+}
+.description-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+.description-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+.advantages {
+
+}
+.advantages-list {
+
+}
+.advantages-item {
+
+}
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+.reasons {
+
+}
+.reasons-list {
+
+}
+.reasons-item {
+
+}
+.reasons-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.reasons-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+.booking {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.subscribe {
+
+}
+.subscribe-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.subscribe-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+.subscribe-form {
+
+}
+.subscribe-email {
+
+}
+.subscribe-button {
+
+}
+.with-background {
+
+}
+.page-footer {
+
+}
+.footer-social {
+
+}
+.footer-social-list {
+
+}
+.footer-social-item {
+
+}
+.social-button {
+
+}
+.footer-contacts {
+
+}
+.footer-contacts-address {
+
+}
+.footer-contacts-address-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+.academy {
+
+}
+.academy-logo {
+
+}
+.housing-catalog {
+
+}
+.housing-catalog-choice {
+
+}
+.housing-catalog-choice-button {
+
+}
+.infrastructure-choice {
+
+}
+.infrastructure-title {
+
+}
+.infrastructure-choice-item {
+
+}
+.infrastructure-item {
+
+}
+.accommodation-choice {
+
+}
+.accommodation-title {
+
+}
+.accommodation-choice-item {
+
+}
+.accommodation-item {
+
+}
+.clear-form {
+
+}
+.select-control {
+
+}
+.view-button {
+
+}
+.button-bordered {
+
+}
+.sorting {
+
+}
+.hotel-found {
+
+}
+.details {
+
+}
+.favorites {
+
+}
+.rate-img {
+
+}
+.rating {
+
+}
+.pagination {
+
+}
+.pagination-item {
+
+}
+.pagination-link {
+
+}
+.pagination-current {
+
+}
+.pagination-break {
+
+}
