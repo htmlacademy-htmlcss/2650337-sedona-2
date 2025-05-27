@@ -42,50 +42,48 @@
     <h1 class="inner-header-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
-        <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
+        <a class="breadcrumbs-link-main" href="index.html"><span class="visually-hidden">Главная</span></a>
       </li>
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link">Гостиницы</a>
       </li>
     </ul>
+      <h2 class="visually-hidden">Каталог гостиниц</h2>
+      <form class="housing-choice" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="infrastructure">
+          <legend class="infrastructure-title">Инфраструктура</legend>
+          <label class="infrastructure-choice-item">
+            <input class="infrastructure-item" type="checkbox" name="pool" value="pool" checked>
+            Бассейн
+          </label>
+          <label class="infrastructure-choice-item">
+            <input class="infrastructure-item" type="checkbox" name="parking" value="parking" checked>
+            Парковка
+          </label>
+          <label class="infrastructure-choice-item">
+            <input class="infrastructure-item" type="checkbox" name="wifi" value="Wi-Fi">
+            Wi-Fi
+          </label>
+        </fieldset>
+        <fieldset class="accommodation">
+          <legend class="accommodation-title">Инфраструктура</legend>
+          <label class="accommodation-choice-item">
+            <input class="accommodation-item" type="radio" name="accommodation" value="hotel" checked>
+            Гостиница
+          </label>
+          <label class="accommodation-choice-item">
+            <input class="accommodation-item" type="radio" name="accommodation" value="motel">
+            Мотель
+          </label>
+          <label class="accommodation-choice-item">
+            <input class="accommodation-item" type="radio" name="accommodation" value="apartments">
+            Апартаменты
+          </label>
+        </fieldset>
+        <button class="housing-catalog-apply-button" type="submit">Применить</button>
+        <button class="housing-catalog-reset-button" type="reset">Сбросить</button>
+      </form>
   </header>
-  <section class="housing-catalog">
-    <h2 class="visually-hidden">Каталог гостиниц</h2>
-    <form class="housing-catalog-choice" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="infrastructure-choice">
-        <legend class="infrastructure-title">Инфраструктура</legend>
-        <label class="infrastructure-choice-item">
-          <input class="infrastructure-item" type="checkbox" name="pool" value="pool" checked>
-          Бассейн
-        </label>
-        <label class="infrastructure-choice-item">
-          <input class="infrastructure-item" type="checkbox" name="parking" value="parking" checked>
-          Парковка
-        </label>
-        <label class="infrastructure-choice-item">
-          <input class="infrastructure-item" type="checkbox" name="wifi" value="Wi-Fi">
-          Wi-Fi
-        </label>
-      </fieldset>
-      <fieldset class="accommodation-choice">
-        <legend class="accommodation-title">Инфраструктура</legend>
-        <label class="accommodation-choice-item">
-          <input class="accommodation-item" type="radio" name="accommodation" value="hotel" checked>
-          Гостиница
-        </label>
-        <label class="accommodation-choice-item">
-          <input class="accommodation-item" type="radio" name="accommodation" value="motel">
-          Мотель
-        </label>
-        <label class="accommodation-choice-item">
-          <input class="accommodation-item" type="radio" name="accommodation" value="apartments">
-          Апартаменты
-        </label>
-      </fieldset>
-      <button class="housing-catalog-choice-button" type="submit">Применить</button>
-      <input class="clear-form" type="button" value="Собросить">
-    </form>
-  </section>
   <div class="sorting">
     <p class="hotel-found">
       Найдено гостиниц: 38
@@ -119,7 +117,7 @@
       </p>
       <a class="details" href=" ">Подробнее</a>
       <button class="favorites" type="button">в избранное</button>
-      <img class="rate-img" src="images/4-stars.png" alt="Рейтинг гостиницы">
+      <img class="rate-img" src="images/4-stars.png" alt="Рейтинг гостиницы - 4 звезды">
       <p class="rating">Рейтинг: 8,5</p>
     </li>
     <li class="hotel-card">
@@ -135,7 +133,7 @@
       </p>
       <a class="details" href=" ">Подробнее</a>
       <button class="favorites" type="button">в избранное</button>
-      <img class="rate-img" src="images/5-stars.png" alt="Рейтинг гостиницы">
+      <img class="rate-img" src="images/4-stars.png" alt="Рейтинг гостиницы - 4 звезды">
       <p class="rating">Рейтинг: 9,2</p>
     </li>
     <li class="hotel-card">
@@ -151,7 +149,7 @@
       </p>
       <a class="details" href=" ">Подробнее</a>
       <button class="favorites" type="button">в избранное</button>
-      <img class="rate-img" src="images/3-stars.png" alt="Рейтинг гостиницы">
+      <img class="rate-img" src="images/3-stars.png" alt="Рейтинг гостиницы - 3 звезды">
       <p class="rating">Рейтинг: 6,9</p>
     </li>
     <li class="hotel-card">
@@ -165,7 +163,7 @@
       </p>
       <a class="details" href=" ">Подробнее</a>
       <button class="favorites" type="button">в избранное</button>
-      <img class="rate-img" src="images/2-stars.png" alt="Рейтинг гостиницы">
+      <img class="rate-img" src="images/2-stars.png" alt="Рейтинг гостиницы - 2 звезды">
       <p class="rating">Рейтинг: 5,0</p>
     </li>
   </ul>
@@ -190,13 +188,11 @@
     </li>
   </ul>
   <section class="subscribe">
-    <h2 class="visually-hidden">Рассылка</h2>
     <p class="subscribe-title">
       Подпишитесь на рассылку
     </p>
     <p class="subscribe-text">
-      Только полезная информация и никакого спама,<br>
-      честное бойскаутское!
+      Только полезная информация и никакого спама, честное бойскаутское!
     </p>
     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
       <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
@@ -211,17 +207,17 @@
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="social-button" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">ВКонтакте</span>
+          <span class="visually-hidden">Мы ВКонтакте</span>
         </a>
       </li>
       <li class="footer-social-item">
         <a class="social-button" href="https://t.me/htmlacademy ">
-          <span class="visually-hidden">Telegram</span>
+          <span class="visually-hidden">Мы в Telegram</span>
         </a>
       </li>
       <li class="footer-social-item">
         <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">YouTube</span>
+          <span class="visually-hidden">Наш YouTube-канал</span>
         </a>
       </li>
     </ul>
@@ -232,8 +228,8 @@
       <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </address>
   </section>
-  <a class="academy" href="https://htmlacademy.ru/">
-    <img class="academy-logo" src="images/academy_logo.svg" alt="Логотип HTML-academy">
+  <a class="company" href="https://htmlacademy.ru/">
+    <img class="company-logo" src="images/academy_logo.svg" alt="Логотип HTML-academy">
   </a>
 </footer>
 </body>

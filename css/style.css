@@ -63,6 +63,9 @@ body {
 .breadcrumbs-link {
 
 }
+.breadcrumbs-link-main {
+
+}
 .breadcrumbs-item {
 
 }
@@ -70,9 +73,6 @@ body {
 
 }
 .logo-welcome {
-
-}
-.description {
 
 }
 .description-title {
@@ -162,6 +162,9 @@ body {
 .subscribe-form {
 
 }
+.subscribe-label {
+
+}
 .subscribe-email {
 
 }
@@ -199,22 +202,22 @@ body {
   color: #000000;
 
 }
-.academy {
+.company {
 
 }
-.academy-logo {
+.company-logo {
 
 }
-.housing-catalog {
+.housing-choice {
 
 }
-.housing-catalog-choice {
+.housing-catalog-apply-button {
 
 }
-.housing-catalog-choice-button {
+.housing-catalog-reset-button {
 
 }
-.infrastructure-choice {
+.infrastructure {
 
 }
 .infrastructure-title {
@@ -226,7 +229,7 @@ body {
 .infrastructure-item {
 
 }
-.accommodation-choice {
+.accommodation {
 
 }
 .accommodation-title {
@@ -236,9 +239,6 @@ body {
 
 }
 .accommodation-item {
-
-}
-.clear-form {
 
 }
 .select-control {
