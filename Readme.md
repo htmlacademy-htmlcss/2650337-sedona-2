@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-* Студент: [Елизавета  Салий](https://up.htmlacademy.ru/htmlcss-individual/2/user/2650337).
+* Студент: [Елизавета Салий](https://up.htmlacademy.ru/htmlcss-individual/2/user/2650337).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 * Сайт: [Моя версия проекта "Седона"](https://bessaliy.github.io/2650337-sedona-2)
 ---
