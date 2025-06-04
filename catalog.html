@@ -7,30 +7,31 @@
   <title>Каталог</title>
 </head>
 <body>
+<div class="container">
 <header class="page-header">
   <nav class="navigation">
-    <a class="navigation-logo" href="index.html"><img src="images/logo.svg" alt="Логотип Седона" width="140" height="70"></a>
+    <a class="navigation-logo" href="#"><img src="images/logo.svg" alt="Логотип проекта Седона" width="140" height="70"></a>
     <ul class="navigation-list">
-      <li class="navigation-link"><a href="index.html">Главная</a></li>
-      <li class="navigation-link"><a href="#">О Cедоне</a></li>
-      <li class="navigation-link"><a href="#">Гостиницы</a></li>
+      <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
+      <li class="navigation-item"><a class="navigation-link" href="#">О Cедоне</a></li>
+      <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
     </ul>
     <ul class="navigation-list navigation-other">
-      <li class="navigation-link search">
-        <a href="#">
+      <li class="navigation-item">
+        <a class="navigation-link search" href="#">
           <span class="visually-hidden">Поиск</span>
         </a>
       </li>
-      <li class="navigation-link favorite">
-        <a href="#">
-          <p class="navigation-item">
-            12
-            <span class="visually-hidden">Добавлено в избранное</span>
-          </p>
+      <li class="navigation-item ">
+        <a class="navigation-link favorites" href="#">
+        <span class="favorites-text">
+          12
+          <span class="visually-hidden">Добавлено в избранное</span>
+         </span>
         </a>
       </li>
-      <li class="navigation-link">
-        <a href="#" class="navigation-booking">
+      <li class="navigation-item">
+        <a href="catalog.html" class="navigation-booking">
           Хочу сюда!
         </a>
       </li>
@@ -39,7 +40,7 @@
 </header>
 <main class="main-index">
   <div class="filter">
-    <h1 class="filter-title">Гостиницы Седоны</h1>
+    <h1 class="page-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link-main" href="index.html"><span class="visually-hidden">Главная</span></a>
@@ -92,19 +93,19 @@
       <option value="popular">Сначала популярное</option>
       <option value="expensive">Сначала дорогое</option>
     </select>
-    <ul class="view-button">
-      <li class="piles button-bordered">
-    <a href="#">
+    <ul class="view-button-list">
+      <li class="view-item">
+    <a class="view-link piles button-selected" href="#">
       <span class="visually-hidden">Показать плитки</span>
     </a>
       </li>
-      <li class="cards">
-    <a href="#">
+      <li class="view-item">
+    <a class="view-link cards" href="#">
       <span class="visually-hidden">Карточки</span>
     </a>
       </li>
-      <li class="roll">
-    <a href="#">
+      <li class="view-item">
+    <a class="view-link roll" href="#">
       <span class="visually-hidden">Показать списком</span>
     </a>
       </li>
@@ -113,7 +114,7 @@
   <ul class="hotel-list">
     <li class="hotel-card">
      <a class="hotel-img" href="#" tabindex="-1">
-       <img src="images/hotel-amara.jpg" alt="Гостиница Amara Resort & Spa" width="300" height="212">
+       <img src="images/catalog/hotel-amara.jpg" alt="Гостиница Amara Resort & Spa" width="300" height="212">
      </a>
       <h3 class="hotel-name">
         Amara Resort & Spa
@@ -122,14 +123,14 @@
       <p class="hotel-price">
         От 4000 ₽
       </p>
-      <a class="details" href=" ">Подробнее</a>
-      <button class="favorites" type="button">в избранное</button>
-      <img class="rate-img" src="images/4-stars.png" alt="Рейтинг гостиницы - 4 звезды" width="140" height="37">
+      <a class="details" href="#">Подробнее</a>
+      <button class="to-favorites" type="button">в избранное</button>
+      <span class="stars-4"></span>
       <p class="rating">Рейтинг: 8,5</p>
     </li>
     <li class="hotel-card">
       <a class="hotel-img" href="#" tabindex="-1">
-      <img src="images/hotel-villas.jpg" alt="Гостиница Villas at Poco Diablo" width="300" height="212">
+      <img src="images/catalog/hotel-villas.jpg" alt="Гостиница Villas at Poco Diablo" width="300" height="212">
       </a>
       <h3 class="hotel-name">
         Villas at Poco Diablo
@@ -139,13 +140,13 @@
         От 5000 ₽
       </p>
       <a class="details" href=" ">Подробнее</a>
-      <button class="favorites" type="button">в избранное</button>
-      <img class="rate-img" src="images/4-stars.png" alt="Рейтинг гостиницы - 4 звезды" width="140" height="37">
+      <button class="to-favorites" type="button">в избранное</button>
+      <p class="stars-4"> </p>
       <p class="rating">Рейтинг: 9,2</p>
     </li>
     <li class="hotel-card">
       <a class="hotel-img" href="#" tabindex="-1">
-      <img src="images/hotel-desert.jpg" alt="Гостиница Desert Quail Inn" width="300" height="212">
+      <img src="images/catalog/hotel-desert.jpg" alt="Гостиница Desert Quail Inn" width="300" height="212">
       </a>
       <h3 class="hotel-name">
         Desert Quail Inn
@@ -155,12 +156,12 @@
         От 2500 ₽
       </p>
       <a class="details" href=" ">Подробнее</a>
-      <button class="favorites" type="button">в избранное</button>
-      <img class="rate-img" src="images/3-stars.png" alt="Рейтинг гостиницы - 3 звезды" width="140" height="37">
+      <button class="to-favorites" type="button">в избранное</button>
+      <span class="stars-3"></span>
       <p class="rating">Рейтинг: 6,9</p>
     </li>
     <li class="hotel-card">
-      <img class="hotel-img" src="images/hotel-greentree.jpg" alt="Гостиница GreenTree Inn" width="300" height="212">
+      <img class="hotel-img" src="images/catalog/hotel-greentree.jpg" alt="Гостиница GreenTree Inn" width="300" height="212">
       <h3 class="hotel-name">
         GreenTree Inn
       </h3>
@@ -169,8 +170,8 @@
         От 1500 ₽
       </p>
       <a class="details" href=" ">Подробнее</a>
-      <button class="favorites" type="button">в избранное</button>
-      <img class="rate-img" src="images/2-stars.png" alt="Рейтинг гостиницы - 2 звезды" width="140" height="37">
+      <button class="to-favorites" type="button">в избранное</button>
+      <span class="stars-2"></span>
       <p class="rating">Рейтинг: 5,0</p>
     </li>
   </ul>
@@ -212,18 +213,18 @@
   <section class="footer-social">
     <h2 class="visually-hidden">Соцсети</h2>
     <ul class="footer-social-list">
-      <li class="footer-social-item vk">
-        <a class="social-button" href="https://vk.com/htmlacademy">
+      <li class="footer-social-item">
+        <a class="social-link vk" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Мы ВКонтакте</span>
         </a>
       </li>
-      <li class="footer-social-item telegram">
-        <a class="social-button" href="https://t.me/htmlacademy ">
+      <li class="footer-social-item">
+        <a class="social-link telegram" href="https://t.me/htmlacademy ">
           <span class="visually-hidden">Мы в Telegram</span>
         </a>
       </li>
-      <li class="footer-social-item youtube">
-        <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
+      <li class="footer-social-item">
+        <a class="social-link youtube" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">Наш YouTube-канал</span>
         </a>
       </li>
@@ -236,8 +237,9 @@
     </address>
   </section>
   <a class="company" href="https://htmlacademy.ru/">
-    <img class="company-logo" src="images/academy_logo.svg" alt="Логотип HTML-academy" width="115" height="34">
+    <img class="company-logo" src="images/academy-logo.svg" alt="Логотип HTML-academy" width="115" height="34">
   </a>
 </footer>
+  </div>
 </body>
 </html>
