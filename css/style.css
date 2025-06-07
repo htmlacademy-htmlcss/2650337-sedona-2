@@ -1,22 +1,27 @@
 @font-face {
   font-family: "PT Sans";
   src: url('../fonts/ptsans-400.woff2') format('woff2');
+  font-display: swap;
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url('../fonts/ptsans-700.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 700;
   font-style: normal;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
-background-color: #F2F2F2;
+  background-color: #F2F2F2;
 }
 .container {
-  display: block;
-  position: absolute;
+  margin: auto;
   width: 1200px;
   background-color: white;
-  box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.2),
-    10px 0 10px -5px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 .visually-hidden {
   position: fixed;
@@ -42,9 +47,9 @@ background-color: #F2F2F2;
 
 }
 .navigation-link {
-   text-decoration: none;
-   color: black;
-   font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 .search {
   display: inline-block;
@@ -74,8 +79,20 @@ background-color: #F2F2F2;
   line-height: 20px;
 }
 
-.navigation-other {
+.navigation-user {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.navigation-user-item {
 
+}
+.navigation-user-link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 .navigation-booking {
   text-decoration: none;
@@ -89,9 +106,6 @@ background-color: #F2F2F2;
 }
 .filter {
   background-image: url('../images/catalog/filter-background.jpg');
-  width: 1200px;
-  height: 412px;
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -107,18 +121,18 @@ background-color: #F2F2F2;
 
 }
 .breadcrumbs {
-color: white;
+  color: white;
 }
 .breadcrumbs-link {
-color: white;
+  color: white;
 }
 .breadcrumbs-link-main {
-color: white;
+  color: white;
 }
 .breadcrumbs-item {
-color: white;
+  color: white;
 }
-.main-index {
+.main {
 
 }
 .logo-welcome {
@@ -245,8 +259,7 @@ color: white;
 
 }
 .with-background {
-background-image: url("../images/index/subscribe-background.jpg");
-  width: 1200px;
+  background-image: url("../images/index/subscribe-background.jpg");
   height: 415px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -277,14 +290,14 @@ background-image: url("../images/index/subscribe-background.jpg");
 .telegram {
   display: inline-block;
   background-size: cover;
-background-image: url("../images/telegram.svg");
+  background-image: url("../images/telegram.svg");
   width: 18px;
   height: 16px;
 }
 .youtube {
   display: inline-block;
   background-size: cover;
-background-image: url("../images/youtube.svg");
+  background-image: url("../images/youtube.svg");
   width: 22px;
   height: 17px;
 }
@@ -311,7 +324,7 @@ background-image: url("../images/youtube.svg");
 
 }
 .housing-choice {
-color: white;
+  color: white;
 }
 .housing-catalog-apply-button {
 
