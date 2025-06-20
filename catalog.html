@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог</title>
@@ -16,21 +17,21 @@
         <li class="navigation-item"><a class="navigation-link" href="#">О Cедоне</a></li>
         <li class="navigation-item"><a class="navigation-link" href="catalog.html" aria-current="page">Гостиницы</a></li>
       </ul>
-      <ul class="navigation-list navigation-other">
-        <li class="navigation-item">
-          <a class="navigation-link search" href="#">
+      <ul class="navigation-user">
+        <li class="navigation-user-item">
+          <a class="navigation-user-link search" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li class="navigation-item ">
-          <a class="navigation-link favorites" href="#">
+        <li class="navigation-user-item">
+          <a class="navigation-user-link favorites" href="#">
         <span class="favorites-text">
           12
           <span class="visually-hidden">Добавлено в избранное</span>
          </span>
           </a>
         </li>
-        <li class="navigation-item">
+        <li class="navigation-user-item">
           <a href="catalog.html" class="navigation-booking">
             Хочу сюда!
           </a>
@@ -38,8 +39,8 @@
       </ul>
     </nav>
   </header>
-  <main class="main">
-    <div class="filter">
+  <main class="main page-wrapper">
+    <div class="filter form-flex">
       <h1 class="page-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
@@ -50,7 +51,8 @@
         </li>
       </ul>
       <form class="housing-choice" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="infrastructure">
+        <div class="form-wrapper">
+        <fieldset class="infrastructure form-flex">
           <legend class="infrastructure-title">Инфраструктура:</legend>
           <label class="infrastructure-choice-item" for="pool">
             <input class="infrastructure-item" id="pool" type="checkbox" name="pool" value="pool" checked>
@@ -65,7 +67,7 @@
             Wi-Fi
           </label>
         </fieldset>
-        <fieldset class="accommodation">
+        <fieldset class="accommodation form-flex">
           <legend class="accommodation-title">Тип жилья:</legend>
           <label class="accommodation-choice-item" for="hotel">
             <input class="accommodation-item" id="hotel" type="radio" name="accommodation" value="hotel" checked>
@@ -80,8 +82,11 @@
             Апартаменты
           </label>
         </fieldset>
+          <div class="form-flex">
         <button class="housing-catalog-apply-button" type="submit">Применить</button>
         <button class="housing-catalog-reset-button" type="reset">Сбросить</button>
+          </div>
+        </div>
       </form>
     </div>
     <section class="hotels-catalog">
@@ -177,7 +182,7 @@
       </li>
     </ul>
     </section>
-    <ul class="pagination">
+    <ul class="pagination stripe-long">
       <li class="pagination-item">
         <a class="pagination-link pagination-current">1</a>
       </li>
