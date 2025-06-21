@@ -15,15 +15,15 @@
       <ul class="navigation-list">
         <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
         <li class="navigation-item"><a class="navigation-link" href="#">О Cедоне</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="catalog.html" aria-current="page">Гостиницы</a></li>
+        <li class="navigation-item underlined-hotels"><a class="navigation-link" href="catalog.html" aria-current="page">Гостиницы</a></li>
       </ul>
       <ul class="navigation-user">
-        <li class="navigation-user-item">
+        <li class="navigation-user-item with-icon">
           <a class="navigation-user-link search" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li class="navigation-user-item">
+        <li class="navigation-user-item with-icon">
           <a class="navigation-user-link favorites" href="#">
         <span class="favorites-text">
           12
@@ -31,8 +31,8 @@
          </span>
           </a>
         </li>
-        <li class="navigation-user-item">
-          <a href="catalog.html" class="navigation-booking">
+        <li class="navigation-user-item with-button">
+          <a class="navigation-booking" href="catalog.html">
             Хочу сюда!
           </a>
         </li>
@@ -203,6 +203,7 @@
       </li>
     </ul>
     <section class="subscribe">
+      <div class="subscribe-wrapper">
       <p class="subscribe-title">
         Подпишитесь на рассылку
       </p>
@@ -214,6 +215,7 @@
         <input class="subscribe-email" id="subscribe-email" type="email" placeholder="janedoe@mail.com" required>
         <button class="subscribe-button" type="submit">Подписаться</button>
       </form>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
