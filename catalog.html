@@ -80,7 +80,26 @@
             Апартаменты
           </label>
         </fieldset>
-          <div class="form-flex">
+          <fieldset class="price form-flex">
+            <legend class="price-title">Стоимость, ₽:</legend>
+            <div class="price-numbers">
+              <input class="price-input input-min" type="number" value="0" placeholder="0" id="min-price" name="min-price">
+              <label class="price-label label-min" for="min-price"> от </label>
+              <input class="price-input input-max" type="number" value="9000" placeholder="9000" id="max-price" name="max-price">
+              <label class="price-label label-max" for="max-price"> до </label>
+            </div>
+            <div class="slider">
+              <div class="price-slider">
+                  <button type="button" class="slider-handle min-price">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button type="button" class="slider-handle max-price">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-flex submit-reset">
         <button class="housing-catalog-apply-button" type="submit">Применить</button>
         <button class="housing-catalog-reset-button" type="reset">Сбросить</button>
           </div>
@@ -92,11 +111,14 @@
       <h2 class="hotel-found">
         Найдено гостиниц: 38
       </h2>
+      <div class="select-wrapper">
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
         <option value="popular">Сначала популярные</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
+        <span class="select-arrow"></span>
+      </div>
       <ul class="view-button-list">
         <li class="view-item">
           <a class="view-link piles button-selected" href="#">
