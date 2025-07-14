@@ -31,7 +31,7 @@
           </a>
         </li>
         <li class="navigation-user-item with-button">
-          <a class="navigation-booking" href="catalog.html">
+          <a class="navigation-booking button-dark" href="catalog.html">
             Хочу сюда!
           </a>
         </li>
@@ -137,7 +137,7 @@
       <p class="description-text">
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <a class="booking" href="catalog.html">Поиск гостиницы в Седоне</a>
+      <a class="booking button-dark" href="catalog.html">Поиск гостиницы в Седоне</a>
     </section>
     <section class="subscribe with-background">
       <p class="subscribe-title">
@@ -149,7 +149,7 @@
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="subscribe-email" id="subscribe-email" type="email" placeholder="janedoe@mail.com" required>
         <label class="subscribe-label light-label" for="subscribe-email">Ваш e-mail</label>
-        <button class="subscribe-button" type="submit">Подписаться</button>
+        <button class="subscribe-button button-light" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
@@ -193,6 +193,52 @@
       2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg>
     </a>
   </footer>
+<div class="modal-wrapper modal-closed">
+  <div class="modal modal-choice">
+    <button class="modal-close">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <form class="modal-form">
+      <fieldset class="modal-form-content">
+      <legend class="modal-head">
+        <h3 class="modal-head-text">Поиск гостиницы в Седоне</h3>
+      </legend>
+        <label class="check-in-label modal-label" for="check-in">Дата заезда:</label>
+        <div class="check-in-wrapper">
+        <input class="check-in-date modal-date" type="date" name="check-in" id="check-in" value="2020-04-27" placeholder="YYYY-MM-DD" required>
+        <p class="error-text modal-comment">Мы не можем отправить вас в прошлое.</p>
+        </div>
+        <label class="check-out-label modal-label" for="check-out">Дата выезда:</label>
+        <div class="check-out-wrapper">
+        <input class="check-out-date modal-date" type="date" name="check-out" id="check-out" value="2023-09-01" placeholder="YYYY-MM-DD" required>
+          <p class="no-error-text modal-comment">На эти даты есть свободные номера. Пока есть.</p>
+        </div>
+        <label class="adults-amount-label modal-label" for="adults">Взрослые:</label>
+        <div class="adults-amount-wrapper">
+          <button class="button-minus modal-button"></button>
+        <input class="adults-amount modal-amount" type="number" name="adults" id="adults" min="0" max="10" step="1" value="2">
+          <button class="button-plus modal-button"></button>
+        </div>
+        <span class="modal-form-label">
+        <label class="children-amount-label modal-label" for="children">Дети:</label>
+          <span class="tooltip">
+            <button class="tooltip-toggle"></button>
+            <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+              Дети до 6 лет размещаются бесплатно.
+            </span>
+          </span>
+          </span>
+        <div class="children-amount-wrapper">
+          <button class="button-minus modal-button"></button>
+        <input  class="children-amount modal-amount" type="number" name="children" id="children" min="0" max="10" step="1" value="2">
+          <button class="button-plus modal-button"></button>
+        </div>
+        <button class="modal-submit-button button-light" type="submit">Найти</button>
+      </fieldset>
+    </form>
+  </div>
+
+</div>
 </div>
 </body>
 </html>
