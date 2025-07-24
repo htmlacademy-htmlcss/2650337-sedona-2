@@ -18,12 +18,12 @@
         <li class="navigation-item"><a class="navigation-link current-link" href="catalog.html" aria-current="page">Гостиницы</a></li>
       </ul>
       <ul class="navigation-user">
-        <li class="navigation-user-item with-icon">
+        <li class="navigation-user-item">
           <a class="navigation-user-link search" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li class="navigation-user-item with-icon">
+        <li class="navigation-user-item">
           <a class="navigation-user-link favorites" href="#">
             <span class="favorites-text"> 12 </span>
             <span class="visually-hidden">Добавлено в избранное</span>
@@ -38,7 +38,7 @@
     </nav>
   </header>
   <main class="main">
-    <div class="filter form-flex">
+    <div class="filter">
       <h1 class="page-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
@@ -49,38 +49,37 @@
         </li>
       </ul>
       <form class="housing-choice" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form-wrapper">
-        <fieldset class="infrastructure form-flex">
-          <legend class="infrastructure-title">Инфраструктура:</legend>
-          <label class="infrastructure-choice-item" for="pool">
-            <input class="infrastructure-item" id="pool" type="checkbox" name="pool" value="pool" checked>
+        <fieldset class="choice">
+          <legend class="choice-title">Инфраструктура:</legend>
+          <label class="choice-label" for="pool">
+            <input class="checkbox choice-item" id="pool" type="checkbox" name="pool" value="pool" checked>
             Бассейн
           </label>
-          <label class="infrastructure-choice-item" for="parking">
-            <input class="infrastructure-item" id="parking" type="checkbox" name="parking" value="parking" checked>
+          <label class="choice-label" for="parking">
+            <input class="checkbox choice-item" id="parking" type="checkbox" name="parking" value="parking" checked>
             Парковка
           </label>
-          <label class="infrastructure-choice-item" for="wifi">
-            <input class="infrastructure-item" id="wifi" type="checkbox" name="wifi" value="Wi-Fi">
+          <label class="choice-label" for="wifi">
+            <input class="checkbox choice-item" id="wifi" type="checkbox" name="wifi" value="Wi-Fi">
             Wi-Fi
           </label>
         </fieldset>
-        <fieldset class="accommodation form-flex">
-          <legend class="accommodation-title">Тип жилья:</legend>
-          <label class="accommodation-choice-item" for="hotel">
-            <input class="accommodation-item" id="hotel" type="radio" name="accommodation" value="hotel" checked>
+        <fieldset class="choice">
+          <legend class="choice-title">Тип жилья:</legend>
+          <label class="choice-label" for="hotel">
+            <input class="radio choice-item" id="hotel" type="radio" name="accommodation" value="hotel" checked>
             Гостиница
           </label>
-          <label class="accommodation-choice-item" for="motel">
-            <input class="accommodation-item" id="motel" type="radio" name="accommodation" value="motel">
+          <label class="choice-label" for="motel">
+            <input class="radio choice-item" id="motel" type="radio" name="accommodation" value="motel">
             Мотель
           </label>
-          <label class="accommodation-choice-item" for="apartments">
-            <input class="accommodation-item" id="apartments" type="radio" name="accommodation" value="apartments">
+          <label class="choice-label" for="apartments">
+            <input class="radio choice-item" id="apartments" type="radio" name="accommodation" value="apartments">
             Апартаменты
           </label>
         </fieldset>
-          <fieldset class="price form-flex">
+          <fieldset class="price">
             <legend class="price-title">Стоимость, ₽:</legend>
             <div class="price-numbers">
               <input class="price-input input-min" type="number" value="0" placeholder="0" id="min-price" name="min-price">
@@ -99,11 +98,10 @@
               </div>
             </div>
           </fieldset>
-          <div class="form-flex submit-reset">
+          <div class="submit-reset">
         <button class="housing-catalog-apply-button button-light" type="submit">Применить</button>
         <button class="housing-catalog-reset-button" type="reset">Сбросить</button>
           </div>
-        </div>
       </form>
     </div>
     <section class="hotels-catalog">
@@ -225,9 +223,9 @@
       </li>
     </ul>
     <section class="subscribe">
-      <p class="subscribe-title">
+      <h2 class="subscribe-title">
         Подпишитесь на рассылку
-      </p>
+      </h2>
       <p class="subscribe-text">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
@@ -266,7 +264,7 @@
       </address>
     </section>
     <a class="developer" href="https://htmlacademy.ru/">
-      <span class="visually-hidden">Лого разработчика - HTML-academy</span>
+      <span class="visually-hidden">Сайт разработан HTML-академией</span>
       <svg class="developer-logo" xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="none"><path fill="#000" d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9
       3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1
       1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.06c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2v12.7ZM28.9
@@ -279,50 +277,57 @@
     </a>
   </footer>
   <div class="modal-wrapper modal-closed">
-    <div class="modal modal-choice">
-      <button class="modal-close">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-      <form class="modal-form">
-        <fieldset class="modal-form-content">
-          <legend class="modal-head">
-            <h3 class="modal-head-text">Поиск гостиницы в Седоне</h3>
-          </legend>
-          <label class="check-in-label modal-label" for="check-in">Дата заезда:</label>
-          <div class="check-in-wrapper">
-            <input class="check-in-date modal-date" type="date" name="check-in" id="check-in" value="2020-04-27" placeholder="YYYY-MM-DD" required>
-            <p class="error-text modal-comment">Мы не можем отправить вас в прошлое.</p>
-          </div>
-          <label class="check-out-label modal-label" for="check-out">Дата выезда:</label>
-          <div class="check-out-wrapper">
-            <input class="check-out-date modal-date" type="date" name="check-out" id="check-out" value="2023-09-01" placeholder="YYYY-MM-DD" required>
-            <p class="no-error-text modal-comment">На эти даты есть свободные номера. Пока есть.</p>
-          </div>
-          <label class="adults-amount-label modal-label" for="adults">Взрослые:</label>
-          <div class="adults-amount-wrapper">
-            <button class="button-minus modal-button"></button>
-            <input class="adults-amount modal-amount" type="number" name="adults" id="adults" min="0" max="10" step="1" value="2">
-            <button class="button-plus modal-button"></button>
-          </div>
-          <span class="modal-form-label">
+    <div class="modal">
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <h3 class="modal-head-text">Поиск гостиницы в Седоне</h3>
+        <div class="modal-date-wrapper">
+          <label class="date-label modal-label" for="check-in">Дата заезда:</label>
+          <input class="modal-date" type="text" name="check-in" id="check-in" value="27 апреля 2020" placeholder="Укажите дату" required>
+          <p class="error-text modal-comment">Мы не можем отправить вас в прошлое.</p>
+        </div>
+        <div class="modal-date-wrapper">
+          <label class="date-label modal-label" for="check-out">Дата выезда:</label>
+          <input class="modal-date" type="text" name="check-out" id="check-out" value="1 сентября 2023" placeholder="Укажите дату" required>
+          <p class="modal-comment">На эти даты есть свободные номера. Пока есть.</p>
+        </div>
+        <label class="adults-amount-label modal-label" for="adults">Взрослые:</label>
+        <div class="adults-amount-wrapper">
+          <button type="button" class="button-minus modal-button">
+            <span class="visually-hidden">Уменьшить на 1</span>
+          </button>
+          <input class="modal-amount" type="number" name="adults" id="adults" min="0" max="10" step="1" value="2">
+          <button type="button" class="button-plus modal-button">
+            <span class="visually-hidden">Увеличить на 1</span>
+          </button>
+        </div>
+        <span class="modal-form-label">
         <label class="children-amount-label modal-label" for="children">Дети:</label>
           <span class="tooltip">
-            <button class="tooltip-toggle"></button>
+            <button type="button" class="tooltip-toggle">
+              <span class="visually-hidden">Дополнительная информация:</span>
+            </button>
             <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
               Дети до 6 лет размещаются бесплатно.
             </span>
           </span>
           </span>
-          <div class="children-amount-wrapper">
-            <button class="button-minus modal-button"></button>
-            <input  class="children-amount modal-amount" type="number" name="children" id="children" min="0" max="10" step="1" value="2">
-            <button class="button-plus modal-button"></button>
-          </div>
-          <button class="modal-submit-button button-light" type="submit">Найти</button>
-        </fieldset>
+        <div class="children-amount-wrapper">
+          <button type="button" class="button-minus modal-button">
+            <span class="visually-hidden">Уменьшить на 1</span>
+          </button>
+          <input  class="modal-amount" type="number" name="children" id="children" min="0" max="10" step="1" value="2">
+          <button type="button" class="button-plus modal-button">
+            <span class="visually-hidden">Увеличить на 1</span>
+          </button>
+        </div>
+        <button class="modal-submit-button button-light" type="submit">Найти</button>
       </form>
+      <button type="button" class="modal-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </div>
-</div>
+
+  </div>
 </div>
 </body>
 </html>
