@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container">
-  <header class="page-header">
+  <header class="page-header" data-test="header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html"><img src="images/logo.svg" alt="Логотип проекта Седона" width="140" height="70"></a>
       <ul class="navigation-list">
@@ -37,7 +37,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main">
+  <main class="main" data-test="main">
     <div class="filter">
       <h1 class="page-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -48,7 +48,7 @@
           <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
         </li>
       </ul>
-      <form class="housing-choice" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="housing-choice" action="https://echo.htmlacademy.ru/" method="post" data-test="filter">
         <fieldset class="choice">
           <legend class="choice-title">Инфраструктура:</legend>
           <label class="choice-label" for="pool">
@@ -104,7 +104,7 @@
           </div>
       </form>
     </div>
-    <section class="hotels-catalog">
+    <section class="hotels-catalog" data-test="catalog">
     <div class="sorting">
       <h2 class="hotel-found">
         Найдено гостиниц: 38
@@ -222,7 +222,7 @@
         <a class="pagination-link button-light" href="#">10</a>
       </li>
     </ul>
-    <section class="subscribe">
+    <section class="subscribe" data-test="subscribe">
       <h2 class="subscribe-title">
         Подпишитесь на рассылку
       </h2>
@@ -236,7 +236,7 @@
       </form>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer" data-test="footer">
     <section class="footer-social">
       <h2 class="visually-hidden">Соцсети</h2>
       <ul class="social-list">
@@ -276,7 +276,7 @@
       2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg>
     </a>
   </footer>
-  <div class="modal-wrapper modal-closed">
+  <div class="modal-wrapper modal-closed" data-test="modal">
     <div class="modal">
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
         <h3 class="modal-head-text">Поиск гостиницы в Седоне</h3>
