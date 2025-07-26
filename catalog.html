@@ -15,23 +15,23 @@
       <a class="navigation-logo" href="index.html"><img src="images/logo.svg" alt="Логотип проекта Седона" width="140" height="70"></a>
       <ul class="navigation-list">
         <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
-        <li class="navigation-item"><a class="navigation-link">О Седоне</a></li>
-        <li class="navigation-item"><a class="navigation-link current-link" href="catalog.html" aria-current="page">Гостиницы</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="">О Седоне</a></li>
+        <li class="navigation-item"><a class="navigation-link current-link" tabindex="0">Гостиницы</a></li>
       </ul>
       <ul class="navigation-user">
         <li class="navigation-user-item">
-          <a class="navigation-user-link search">
+          <a class="navigation-user-link search" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="navigation-user-item">
-          <a class="navigation-user-link favorites">
+          <a class="navigation-user-link favorites" href="#">
             <span class="favorites-text"> 12 </span>
             <span class="visually-hidden">Добавлено в избранное</span>
           </a>
         </li>
         <li class="navigation-user-item with-button">
-          <a class="navigation-booking button-dark" href="catalog.html">
+          <a class="navigation-booking button-dark" href="#">
             Хочу сюда!
           </a>
         </li>
@@ -72,11 +72,11 @@
             Гостиница
           </label>
           <label class="choice-label" for="motel">
-            <input class="radio choice-item" id="motel" type="radio" name="accommodation" value="motel">
+            <input class="radio choice-item" id="motel" type="radio" name="accommodation" value="motel" tabindex="0">
             Мотель
           </label>
           <label class="choice-label" for="apartments">
-            <input class="radio choice-item" id="apartments" type="radio" name="accommodation" value="apartments">
+            <input class="radio choice-item" id="apartments" type="radio" name="accommodation" value="apartments" tabindex="0">
             Апартаменты
           </label>
         </fieldset>
@@ -120,17 +120,17 @@
       </div>
       <ul class="view-button-list">
         <li class="view-item">
-          <a class="view-link piles button-selected">
+          <a class="view-link piles button-selected" href="catalog.html?view=tile">
             <span class="visually-hidden">Показать плитки</span>
           </a>
         </li>
         <li class="view-item">
-          <a class="view-link cards">
+          <a class="view-link cards" href="catalog.html?view=card">
             <span class="visually-hidden">Карточки</span>
           </a>
         </li>
         <li class="view-item">
-          <a class="view-link roll">
+          <a class="view-link roll" href="catalog.html?view=list">
             <span class="visually-hidden">Показать списком</span>
           </a>
         </li>
@@ -138,10 +138,10 @@
     </div>
     <ul class="hotel-list">
       <li class="hotel-card">
-        <a class="hotel-img" tabindex="-1">
+        <a class="hotel-img" href="#" tabindex="-1">
           <img src="images/catalog/hotel-amara.jpg" alt="Гостиница Amara Resort & Spa" width="300" height="212">
         </a>
-        <a class="hotel-name" tabindex="-1">
+        <a class="hotel-name" href="#" tabindex="-1">
           <h3 class="hotel-name-text"> Amara Resort & Spa </h3>
         </a>
         <p class="hotel-description">Гостиница</p>
@@ -156,47 +156,49 @@
         <p class="rating">Рейтинг: 8,5</p>
       </li>
       <li class="hotel-card">
-        <a class="hotel-img" tabindex="-1">
+        <a class="hotel-img" href="#" tabindex="-1">
           <img src="images/catalog/hotel-villas.jpg" alt="Гостиница Villas at Poco Diablo" width="300" height="212">
         </a>
-        <a class="hotel-name" tabindex="-1">
+        <a class="hotel-name" href="#" tabindex="-1">
           <h3 class="hotel-name-text"> Villas at Poco Diablo </h3>
         </a>
         <p class="hotel-description">Гостиница</p>
         <p class="hotel-price">
           От 5000 ₽
         </p>
-        <a class="details button-dark">Подробнее</a>
+        <a class="details button-dark" href="#">Подробнее</a>
         <button class="added-to-favorites button-accent" type="button">в избранном</button>
         <p class="stars stars-4"><span class="visually-hidden">Категория: 4 звезды</span></p>
         <p class="rating">Рейтинг: 9,2</p>
       </li>
       <li class="hotel-card">
-        <a class="hotel-img" tabindex="-1">
+        <a class="hotel-img" href="#" tabindex="-1">
           <img src="images/catalog/hotel-desert.jpg" alt="Гостиница Desert Quail Inn" width="300" height="212">
         </a>
-        <a class="hotel-name" tabindex="-1">
+        <a class="hotel-name" href="#" tabindex="-1">
           <h3 class="hotel-name-text"> Desert Quail Inn </h3>
         </a>
         <p class="hotel-description">Гостиница</p>
         <p class="hotel-price">
           От 2500 ₽
         </p>
-        <a class="details button-dark">Подробнее</a>
+        <a class="details button-dark" href="#">Подробнее</a>
         <button class="to-favorites button-light" type="button">в избранное</button>
         <p class="stars stars-3"><span class="visually-hidden">Категория: 3 звезды</span></p>
         <p class="rating">Рейтинг: 6,9</p>
       </li>
       <li class="hotel-card">
+        <a class="hotel-img" href="#" tabindex="-1">
         <img class="hotel-img" src="images/catalog/hotel-greentree.jpg" alt="Гостиница GreenTree Inn" width="300" height="212">
-        <a class="hotel-name" tabindex="-1">
+        </a>
+        <a class="hotel-name" href="#" tabindex="-1">
           <h3 class="hotel-name-text"> GreenTree Inn </h3>
         </a>
         <p class="hotel-description">Гостиница</p>
         <p class="hotel-price">
           От 1500 ₽
         </p>
-        <a class="details button-dark">Подробнее</a>
+        <a class="details button-dark" href="#">Подробнее</a>
         <button class="to-favorites button-light" type="button">в избранное</button>
         <p class="stars stars-2"><span class="visually-hidden">Категория: 2 звезды</span></p>
         <p class="rating">Рейтинг: 5,0</p>
@@ -217,7 +219,7 @@
         <a class="pagination-link button-light" href="#">4</a>
       </li>
       <li class="pagination-item">
-        <a class="pagination-break" href="#">...</a>
+        <a class="pagination-break">...</a>
       </li>
       <li class="pagination-item">
         <a class="pagination-link button-light" href="#">10</a>
@@ -307,8 +309,8 @@
             <button class="tooltip-toggle" type="button">
               <span class="visually-hidden">Дополнительная информация:</span>
             </button>
-            <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
-              Дети до 6 лет размещаются бесплатно.
+            <span class="tooltip-text">Укажите количество детей, которые&nbsp;будут с вами, возраст которых от 6 до 18 лет.
+              Дети до&nbsp;6&nbsp;лет&nbsp;размещаются бесплатно.
             </span>
           </span>
           </span>
