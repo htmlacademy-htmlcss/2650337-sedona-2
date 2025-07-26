@@ -294,6 +294,7 @@ body {
   flex-grow: 1;
 }
 .welcome {
+   padding: 0 370px;
    background-color: #82b3d3;
    background-image: url("../images/index/divider.svg"), url("../images/index/index-background.jpg");
    background-repeat: no-repeat;
